@@ -6,7 +6,7 @@ resource "kubernetes_daemonset" "example" {
       test = "MyExampleApp"
     }
   }
-`
+  
   spec {
     selector {
       match_labels = {
