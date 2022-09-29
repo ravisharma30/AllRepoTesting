@@ -6,4 +6,8 @@ resource "azurerm_managed_disk" "ravitest1" {
   create_option        = "Empty"
   disk_size_gb         = var.disk_size_gb
   tags = ravitesting
+  
+   encryption_settings {
+   enabled = true
+ }
 }
