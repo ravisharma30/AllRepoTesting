@@ -1,4 +1,4 @@
-resource "aws_s3_bucket" "examplebucket" {
+resource "aws_s3_bucket" "ravi" {
   bucket = "examplebuckettftest"
 }
 
