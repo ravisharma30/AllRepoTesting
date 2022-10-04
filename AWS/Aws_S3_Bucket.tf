@@ -7,7 +7,7 @@ resource "aws_s3_bucket" "ravitesting2.1.0" {
   acl    = "private"
   versioning {
     enabled = false
-    mfa_delete = false
+    mfa_delete = true
   }
 }
 
