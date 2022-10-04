@@ -1,8 +1,8 @@
-resource "aws_s3_bucket" "testing2.1.0" {
+resource "aws_s3_bucket" "testing210" {
   bucket = "examplebuckettftest"
 }
 
-resource "aws_s3_bucket" "ravitesting2.1.0" {
+resource "aws_s3_bucket" "ravitesting210" {
   bucket = "examplebuckettftest"
   acl    = "private"
   versioning {
@@ -11,7 +11,7 @@ resource "aws_s3_bucket" "ravitesting2.1.0" {
   }
 }
 
-resource "aws_s3_bucket" "ravitest2.1.0" {
+resource "aws_s3_bucket" "ravitest210" {
   bucket = "examplebuckettftest"
   acl    = "private"
   versioning {
