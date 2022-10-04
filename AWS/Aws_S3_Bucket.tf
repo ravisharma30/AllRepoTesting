@@ -19,3 +19,12 @@ resource "aws_s3_bucket" "ravitest210" {
     mfa_delete = false
   }
 }
+
+resource "aws_s3_bucket" "vivektest" {
+  bucket = "examplebuckettftest"
+  acl    = "private"
+  versioning {
+    enabled = false
+    mfa_delete = false
+  }
+}
