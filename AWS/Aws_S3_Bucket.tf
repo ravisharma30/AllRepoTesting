@@ -29,3 +29,12 @@ resource "aws_s3_bucket" "deletescenario" {
   }
 }
 
+resource "aws_s3_bucket" "deletescenario_1" {
+  bucket = "examplebuckettftest"
+  acl    = "private"
+  versioning {
+    enabled = false
+    mfa_delete = false
+  }
+}
+
