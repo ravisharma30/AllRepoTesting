@@ -27,7 +27,7 @@ resource "aws_s3_bucket" "deletescenario_1" {
   acl    = "private"
   versioning {
     enabled = false
-    mfa_delete = false
+    mfa_delete = true
   }
 }
 
