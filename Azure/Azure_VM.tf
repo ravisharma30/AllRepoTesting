@@ -4,8 +4,9 @@ resource "microsoft.sql/servers/databases" "Microsoft.Insights/diagnosticSetting
   "properties": {
     "categoryGroup": "allLogs",
     "enabled": false,
-        "metrics": [
+        "metrics": 
         {
          "enabled": false,
         }
   }
+}
