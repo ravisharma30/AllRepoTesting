@@ -29,5 +29,9 @@ resource "aws_s3_bucket" "deletescenario_1" {
     enabled = true
     mfa_delete = true
   }
+  logging {
+    target_bucket = aws_s3_bucket.log_bucket.id
+    target_prefix = "log/"
+  }
 }
 
