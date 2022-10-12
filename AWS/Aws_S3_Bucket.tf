@@ -22,6 +22,7 @@ resource "aws_s3_bucket" "pavan2" {
 
 
 
+
 resource "aws_s3_bucket" "pavan3" {
   bucket = "examplebuckettftest"
   acl    = "private"
