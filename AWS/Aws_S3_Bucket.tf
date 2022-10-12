@@ -1,17 +1,8 @@
-resource "aws_s3_bucket" "testing210" {
+resource "aws_s3_bucket" "pavan" {
   bucket = "examplebuckettftest"
 }
 
-resource "aws_s3_bucket" "ravitesting210" {
-  bucket = "examplebuckettftest"
-  acl    = "private"
-  versioning {
-    enabled = false
-    mfa_delete = false
-  }
-}
-
-resource "aws_s3_bucket" "ravitest210" {
+resource "aws_s3_bucket" "pavan1" {
   bucket = "examplebuckettftest"
   acl    = "private"
   versioning {
@@ -20,9 +11,19 @@ resource "aws_s3_bucket" "ravitest210" {
   }
 }
 
+resource "aws_s3_bucket" "pavan2" {
+  bucket = "examplebuckettftest"
+  acl    = "private"
+  versioning {
+    enabled = false
+    mfa_delete = true
+  }
+}
 
 
-resource "aws_s3_bucket" "deletescenario_1" {
+
+
+resource "aws_s3_bucket" "pavan3" {
   bucket = "examplebuckettftest"
   acl    = "private"
   versioning {
