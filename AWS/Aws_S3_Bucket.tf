@@ -21,6 +21,15 @@ resource "aws_s3_bucket" "pavan2" {
   }
 }
 
+resource "aws_s3_bucket" "stephy" {
+  bucket = "examplebuckettftest1"
+  acl    = "private"
+  versioning {
+    enabled = false
+    mfa_delete = true
+  }
+}
+
 
 
 
