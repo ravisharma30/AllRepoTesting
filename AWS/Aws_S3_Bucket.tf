@@ -2,7 +2,7 @@ resource "aws_s3_bucket" "pavan" {
   bucket = "examplebuckettftest"
 }
 
-resource "aws_s3_bucket" "pavan1" {
+resource "aws_s3_bucket" "ravidisabled" {
   bucket = "examplebuckettftest"
   acl    = "private"
   versioning {
@@ -14,6 +14,15 @@ resource "aws_s3_bucket" "pavan1" {
 
 resource "aws_s3_bucket" "pavan2" {
   bucket = "examplebuckettftest"
+  acl    = "private"
+  versioning {
+    enabled = false
+    mfa_delete = true
+  }
+}
+
+resource "aws_s3_bucket" "stephy" {
+  bucket = "examplebuckettftest1"
   acl    = "private"
   versioning {
     enabled = false

@@ -8,6 +8,7 @@ resource "azurerm_key_vault" "testing1" {
   purge_protection_enabled    = false
 }
 
+
 resource "azurerm_key_vault" "testing2" {
   name                        = "des-example-keyvault_ravi1"
   location                    = azurerm_resource_group.example.location
@@ -27,3 +28,4 @@ resource "azurerm_key_vault" "testing3" {
   enabled_for_disk_encryption = false
   purge_protection_enabled    = false
 }
+
