@@ -2,7 +2,7 @@ resource "aws_s3_bucket" "pavan" {
   bucket = "examplebuckettftest"
 }
 
-resource "aws_s3_bucket" "pavan1" {
+resource "aws_s3_bucket" "ravidisabled" {
   bucket = "examplebuckettftest"
   acl    = "private"
   versioning {
