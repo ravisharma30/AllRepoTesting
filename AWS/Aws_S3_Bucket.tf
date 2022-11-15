@@ -28,6 +28,7 @@ resource "aws_s3_bucket" "stephy" {
     enabled = false
     mfa_delete = true 
     
+    
   }
 }
 
