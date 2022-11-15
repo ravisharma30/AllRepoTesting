@@ -26,7 +26,7 @@ resource "aws_s3_bucket" "stephy" {
   acl    = "private"
   versioning {
     enabled = false
-    mfa_delete = true
+    mfa_delete = true 
   }
 }
 
