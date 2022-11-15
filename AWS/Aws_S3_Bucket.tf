@@ -27,6 +27,7 @@ resource "aws_s3_bucket" "stephy" {
   versioning {
     enabled = false
     mfa_delete = true 
+    
   }
 }
 
